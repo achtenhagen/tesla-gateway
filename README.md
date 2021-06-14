@@ -245,14 +245,27 @@ Response:
 ### GET /api/system_status/grid_faults
 
 Response:
-```
-Unknown
+```json
+[
+  {
+    "timestamp": 1623278146367,
+    "alert_name": "PINV_a007_vfCheckOverFrequency",
+    "alert_is_fault": false,
+    "decoded_alert": "[{\"name\":\"PINV_alertID\",\"value\":\"PINV_a007_vfCheckOverFrequency\"},{\"name\":\"PINV_alertType\",\"value\":\"Warning\"},{\"name\":\"PINV_a007_frequency\",\"value\":60.937,\"units\":\"Hz\"}]",
+    "alert_raw": 504624507995029504,
+    "git_hash": "0cf970371d243f",
+    "site_uid": "[REDACTED]",
+    "ecu_type": "TEPINV",
+    "ecu_package_part_number": "[REDACTED]",
+    "ecu_package_serial_number": "[REDACTED]"
+  }
+]
 ```
 ### GET /api/powerwalls
 
 Returns detailed information about each Powerwall.
 
-Resonse:
+Response:
 ```json
 {
   "enumerating": false,
@@ -366,7 +379,7 @@ Resonse:
       },
       "bc_type": null,
       "in_config": true
-    },
+    }
   ],
   "gateway_din": "[REDACTED]",
   "sync": {
