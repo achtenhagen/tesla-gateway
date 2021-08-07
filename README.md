@@ -1,5 +1,7 @@
 # Tesla Solar Gateway API ☀️
-(Unofficial) API documentation currently supporting Tesla Gateway version `21.13.2` (0cf970371d2).
+(Unofficial) API documentation currently supporting Tesla Gateway versions:
+- `21.20.2` (e6749f19a66)
+- `21.13.2` (0cf970371d2)
 
 For basic instructions on how to monitor your Powerwall from home, visit Tesla's [website](https://www.tesla.com/support/energy/powerwall/own/monitoring-from-home-network).
 
