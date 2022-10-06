@@ -454,3 +454,14 @@ Response:
   ]
 }
 ```
+### GET /api/operation
+
+Returns information about the Powerwall's "operating mode" (Time-based control vs Self-powered), and the configured battery reserve percentage.
+
+Response:
+```json
+{
+  "real_mode": "self_consumption",
+  "backup_reserve_percent": 20
+}
+```
